@@ -35,6 +35,9 @@ export default buildConfig({
         users: { enabled: false },
         media: { enabled: false },
       },
+      // The MCP API-key collection is created by the plugin. Keep its own
+      // administration inside Payload Admin; no generic collection tools
+      // are exposed for application data until explicitly configured.
     }),
   ],
 })
