@@ -19,7 +19,7 @@ export default buildConfig({
   },
   collections: [Users, Media],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || '',
+  secret: process.env.PAYLOAD_SECRET || 'development-only-placeholder-change-before-deploy',
   typescript: { outputFile: path.resolve(dirname, 'payload-types.ts') },
   db: {
     adapter: postgresAdapter({
