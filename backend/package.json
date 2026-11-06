@@ -7,11 +7,11 @@
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
-    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate",
     "migrate:create": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:create",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint ."
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
+    "payload:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "payload:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "3.93.0",
