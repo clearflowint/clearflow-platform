@@ -21,11 +21,9 @@ export default buildConfig({
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || 'development-only-placeholder-change-before-deploy',
   typescript: { outputFile: path.resolve(dirname, 'payload-types.ts') },
-  db: {
-    adapter: postgresAdapter({
-      pool: { connectionString: process.env.DATABASE_URL || '' },
-    }),
-  },
+  db: postgresAdapter({
+    pool: { connectionString: process.env.DATABASE_URL || '' },
+  }),
   sharp,
   plugins: [
     mcpPlugin({
