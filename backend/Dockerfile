@@ -22,4 +22,4 @@ ENV PORT=3000
 WORKDIR /app
 COPY --from=builder /app ./
 EXPOSE 3000
-CMD ["sh", "-c", "pnpm payload migrate && pnpm start"]
+CMD ["sh", "-c", "pnpm exec payload migrate && pnpm start"]
